@@ -13,5 +13,15 @@ weightedFinal = final * 0.3
 
 grade = weightedAssignments + weightedHomework + weightedMidterm + weightedFinal
 
+if grade >= 89.5:
+    lGrade = 'A'
+elif grade >= 79.5:
+    lGrade = 'B'
+elif grade >= 69.5:
+    lGrade = 'C'
+elif grade >= 59.5:
+    lGrade = 'D'
+else:
+    print("You are a failure :(")
 
-print(f"you earned a {round(grade,1)}%")
+print(f"you earned a {round(grade,1)}% {lGrade}")
