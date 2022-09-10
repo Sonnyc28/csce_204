@@ -15,7 +15,7 @@ if shape == "circle":
     pen.up()
     pen.setpos(0, -shape_size//2)
     pen.down()
-    turtle.circle(shape_size//2)
+    pen.circle(shape_size//2)
 
 elif shape == "square":
     pen.up()
