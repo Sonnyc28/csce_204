@@ -31,3 +31,4 @@ while True:
         print(f"You should have: {food}")
     elif meal == "q":
         break
+print("Goodbye")
