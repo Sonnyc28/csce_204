@@ -52,8 +52,6 @@ for bike in range(bikeNum):
     colors = turtle.textinput("Bike Color", "Enter Color of Bike: ").strip().lower()
     bikeList.append(names)
     bikeColor.append(colors)
-print(bikeColor)
-print(bikeList)
 
 x = -turtle.window_width()//2 + padding
 y = random.randint(-turtle.window_height()//2 + roadHeight, turtle.window_height()//2 - roadHeight)
