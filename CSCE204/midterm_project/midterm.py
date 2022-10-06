@@ -1,4 +1,3 @@
-from tkinter.font import BOLD
 import turtle
 import random
 turtle.bgcolor("skyblue")
