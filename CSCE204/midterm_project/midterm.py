@@ -53,7 +53,7 @@ for bike in range(bikeNum):
     bikeColor.append(colors)
 
 x = -turtle.window_width()//2 + padding
-y = random.randint(-turtle.window_height()//2 + roadHeight, turtle.window_height()//2 - roadHeight)
+y = random.randint(-turtle.window_height()//2 + roadHeight, turtle.window_height()//2 - roadHeight - (bikeLine // 3))
 
 for j in range(bikeNum):
     pen.up()
