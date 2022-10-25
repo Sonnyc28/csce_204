@@ -1,3 +1,4 @@
+import random
 toys = {
     "doll": 19.89,
     "car": 1.99,
@@ -5,7 +6,8 @@ toys = {
     "puzzle": 14.98,
     "stinky": 2
 }
-
+a = random.choice(toys)
+print(a)
 print(f"A truck costs: ${toys['truck']}")
 
 #add an item to the dictionary
