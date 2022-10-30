@@ -1,6 +1,5 @@
 def get_phone_book():
     phonebook = {}
-
     #read file and put in phone book
     with open("exercises/oct27/phones.txt") as file:
         for line in file:
