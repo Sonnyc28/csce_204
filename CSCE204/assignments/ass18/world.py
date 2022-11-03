@@ -13,7 +13,7 @@ pen.speed(0)
 def get_candies():
     candies = []
     try:
-        with open("exercises/nov1/scene.txt") as file:
+        with open("assignments/ass18/scene.txt") as file:
             for line in file:
                 if line.strip() != "":
                     candies.append(line.strip())
@@ -86,12 +86,19 @@ def draw_lollipop(x,y,size):
 
 spacing = turtle.window_width()//6
 x = -turtle.window_width()//2 + spacing//2
-
+"""
 for i in range(3):
     draw_mint(x, 0, 10)
     x += spacing
     draw_lollipop(x, 0, 10)
     x += spacing
-
+"""
+candies = get_candies()
+for candie in candies:
+    if candie == "lollipop":
+        draw_lollipop(x, 0, 10)
+    elif candie == "mint":
+        draw_mint(x, 0, 10)
+    x+= spacing
 
 turtle.done()
