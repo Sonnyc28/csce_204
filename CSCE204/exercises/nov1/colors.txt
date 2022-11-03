@@ -1,0 +1,8 @@
+red
+sky blue
+purple
+orange
+gold
+green
+violet
+forest green
