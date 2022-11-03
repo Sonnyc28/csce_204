@@ -86,19 +86,14 @@ def draw_lollipop(x,y,size):
 
 spacing = turtle.window_width()//6
 x = -turtle.window_width()//2 + spacing//2
-"""
-for i in range(3):
-    draw_mint(x, 0, 10)
-    x += spacing
-    draw_lollipop(x, 0, 10)
-    x += spacing
-"""
+size = turtle.window_width()//100
+
 candies = get_candies()
 for candie in candies:
     if candie == "lollipop":
-        draw_lollipop(x, 0, 10)
+        draw_lollipop(x, 0, size)
     elif candie == "mint":
-        draw_mint(x, 0, 10)
+        draw_mint(x, 0, size)
     x+= spacing
 
 turtle.done()
