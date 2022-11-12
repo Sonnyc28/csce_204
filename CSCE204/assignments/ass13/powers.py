@@ -1,3 +1,4 @@
+# Author: Sonny Chen
 def displayPowers(num):
     for i in range(0,11):
         math = (num ** i)

@@ -1,3 +1,4 @@
+# Author: Sonny Chen
 import turtle
 import random
 turtle.bgcolor("white")

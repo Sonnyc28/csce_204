@@ -1,3 +1,4 @@
+# Author: Sonny Chen
 def get_guests():
     guestList = {}
 
