@@ -1,9 +1,9 @@
 tech specialist : na
-librarian : richard
+librarian : na
 board chef : na
 line leader : sonny
 zoo keeper : na
-planter : john
-janitor : joey
-messenger : steve
+planter : na
+janitor : na
+messenger : na
 pledge leader : na
