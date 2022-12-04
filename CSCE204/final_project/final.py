@@ -16,7 +16,7 @@ row1 = ["","",""]
 row2 = ["","",""]
 gameover = False
 players = ["X", "O"]
-playerW = ""
+playerW = "T"
 
 #Making the board
 def boardLines(x, y, heading):
@@ -190,11 +190,13 @@ def list_thing(x,y):
     print(row0)
     print(row1)
     print(row2)
+    return playerW
 
 def winner():
-    style = ("Ariel", 100, "normal")
+    global players
     global playerW
     pen.setheading(0)
+    pen.color("sky blue")
     pen.up()
     pen.setpos(-turtle.window_width()//2, -turtle.window_height()//6)
     pen.down()
@@ -206,11 +208,18 @@ def winner():
     pen.forward(turtle.window_width())
     pen.end_fill()
 
-    if playerW == "X":
-        pen.color = "sky blue"
+    if playerW == players[0]:
         pen.up()
-        pen.setpos(0,0)
+        pen.setpos(-turtle.window_width()//3, -turtle.window_height()//8)
         pen.down()
-        pen.write("X is the WINNER", font = style)
+        pen.color("white")
+        pen.write("X WON", font = ("Ariel", 110, "normal"))
 
+    elif playerW == players[1]:
+        pen.up()
+        pen.setpos(-turtle.window_width()//3, -turtle.window_height()//8 )
+        pen.down()
+        pen.color("white")
+        pen.write("O WON", font = ("Ariel", 110, "normal"))
+    
 turtle.done()
